@@ -45,7 +45,6 @@ public class Automationcallinghome extends SeleniumUtil
         Thread.sleep(2000);
         
         System.out.println("Entered password.");
-          Thread.sleep(8000);
     }
     
     public void amazon() throws InterruptedException 
@@ -71,9 +70,6 @@ public class Automationcallinghome extends SeleniumUtil
         closeBrowser();
     }
 
-    public WebElement returnDynamicXpath(String identifier)
-    {
-        return driver.findElement(By.xpath("//*[@id=\"menu-item-103\"]/"+identifier+""));
-    }
+   
 
 }
