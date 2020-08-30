@@ -14,14 +14,7 @@ public class Utils
 
     public static String returnProperties(String keyName) throws IOException 
     {
-        String appURL="";
         String hub="";
-    	
-        if (keyName.equalsIgnoreCase("AppURL"))
-        {
-        	appURL = "https://test.salesforce.com";
-        	 return (appURL);
-        }
 
         
         if (keyName.equalsIgnoreCase("HubName"))
