@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-08-30T06:15:23Z" name="ParallelAutomation" finished-at="2020-08-30T06:15:50Z" duration-ms="27451">
+    <groups>
+    </groups>
+    <test started-at="2020-08-30T06:15:23Z" name="chrome_local2" finished-at="2020-08-30T06:15:41Z" duration-ms="18549">
+      <class name="com.automationcalling.testsuites.BasicTests2">
+        <test-method is-config="true" signature="init(java.lang.String, java.lang.String)[pri:0, instance:com.automationcalling.testsuites.BasicTests2@1d548a08]" started-at="2020-08-30T11:45:23Z" name="init" finished-at="2020-08-30T11:45:27Z" duration-ms="3873" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[remote]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="articleLinkTest()[pri:0, instance:com.automationcalling.testsuites.BasicTests2@1d548a08]" started-at="2020-08-30T11:45:27Z" name="articleLinkTest" finished-at="2020-08-30T11:45:41Z" duration-ms="14569" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- articleLinkTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationcalling.testsuites.BasicTests2@1d548a08]" started-at="2020-08-30T11:45:41Z" name="tearDown" finished-at="2020-08-30T11:45:41Z" duration-ms="89" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.automationcalling.testsuites.BasicTests2 -->
+    </test> <!-- chrome_local2 -->
+    <test started-at="2020-08-30T06:15:23Z" name="chrome_local1" finished-at="2020-08-30T06:15:49Z" duration-ms="25653">
+      <class name="com.automationcalling.testsuites.BasicTests1">
+        <test-method is-config="true" signature="init(java.lang.String, java.lang.String)[pri:0, instance:com.automationcalling.testsuites.BasicTests1@14a2f921]" started-at="2020-08-30T11:45:23Z" name="init" finished-at="2020-08-30T11:45:31Z" duration-ms="8067" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[remote]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="articleLinkTest()[pri:0, instance:com.automationcalling.testsuites.BasicTests1@14a2f921]" started-at="2020-08-30T11:45:31Z" name="articleLinkTest" finished-at="2020-08-30T11:45:45Z" duration-ms="14182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- articleLinkTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationcalling.testsuites.BasicTests1@14a2f921]" started-at="2020-08-30T11:45:45Z" name="tearDown" finished-at="2020-08-30T11:45:49Z" duration-ms="3391" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.automationcalling.testsuites.BasicTests1 -->
+    </test> <!-- chrome_local1 -->
+    <test started-at="2020-08-30T06:15:23Z" name="chrome_local" finished-at="2020-08-30T06:15:50Z" duration-ms="27451">
+      <class name="com.automationcalling.testsuites.BasicTests">
+        <test-method is-config="true" signature="init(java.lang.String, java.lang.String)[pri:0, instance:com.automationcalling.testsuites.BasicTests@6328d34a]" started-at="2020-08-30T11:45:23Z" name="init" finished-at="2020-08-30T11:45:36Z" duration-ms="13432" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[remote]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="articleLinkTest()[pri:0, instance:com.automationcalling.testsuites.BasicTests@6328d34a]" started-at="2020-08-30T11:45:36Z" name="articleLinkTest" finished-at="2020-08-30T11:45:50Z" duration-ms="13940" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- articleLinkTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationcalling.testsuites.BasicTests@6328d34a]" started-at="2020-08-30T11:45:50Z" name="tearDown" finished-at="2020-08-30T11:45:50Z" duration-ms="66" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.automationcalling.testsuites.BasicTests -->
+    </test> <!-- chrome_local -->
+  </suite> <!-- ParallelAutomation -->
+</testng-results>

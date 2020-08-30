@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [ParallelAutomation]">
+  <parameter name="executionType" value="local"/>
+  <parameter name="browsertype" value="chrome"/>
+  <test parallel="tests" name="chrome_local2(failed)">
+    <parameter name="executionType" value="local"/>
+    <parameter name="browsertype" value="chrome"/>
+    <classes>
+      <class name="com.automationcalling.testsuites.BasicTests">
+        <methods>
+          <include name="init"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.automationcalling.testsuites.BasicTests -->
+      <class name="com.automationcalling.testsuites.BasicTests1">
+        <methods>
+          <include name="init"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.automationcalling.testsuites.BasicTests1 -->
+      <class name="com.automationcalling.testsuites.BasicTests2">
+        <methods>
+          <include name="tearDown"/>
+          <include name="init"/>
+          <include name="articleLinkTest"/>
+        </methods>
+      </class> <!-- com.automationcalling.testsuites.BasicTests2 -->
+    </classes>
+  </test> <!-- chrome_local2(failed) -->
+  <test parallel="tests" name="chrome_local1(failed)">
+    <parameter name="executionType" value="local"/>
+    <parameter name="browsertype" value="firefox"/>
+    <classes>
+      <class name="com.automationcalling.testsuites.BasicTests">
+        <methods>
+          <include name="init"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.automationcalling.testsuites.BasicTests -->
+      <class name="com.automationcalling.testsuites.BasicTests1">
+        <methods>
+          <include name="articleLinkTest"/>
+          <include name="init"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.automationcalling.testsuites.BasicTests1 -->
+      <class name="com.automationcalling.testsuites.BasicTests2">
+        <methods>
+          <include name="tearDown"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.automationcalling.testsuites.BasicTests2 -->
+    </classes>
+  </test> <!-- chrome_local1(failed) -->
+</suite> <!-- Failed suite [ParallelAutomation] -->
