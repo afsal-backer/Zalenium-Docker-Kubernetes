@@ -36,22 +36,34 @@ public class DriverFactory {
         }
 
         driver = new RemoteWebDriver(new URL("http://" + returnProperties("HubName") + ":4444/wd/hub"), caps);
-        driver.get(returnProperties("AppURL"));
+     
     }
 
-    public void initializeCloudDriver(String browserType) throws IOException {
-        if (browserType.equalsIgnoreCase("chrome")) {
+    public void initializeCloudDriver(String browserType) throws IOException 
+    {
+        if (browserType.equalsIgnoreCase("chrome")) 
+        {
             caps = DesiredCapabilities.chrome();
-        } else if (browserType.equalsIgnoreCase("firefox")) {
+            caps.setCapability("platform", "WINDOWS");
+            caps.setCapability("browserName", "chrome");
+            caps.setCapability("version", "79.0.3945.130");
+        } 
+        else if (browserType.equalsIgnoreCase("firefox")) 
+        {
             caps = DesiredCapabilities.firefox();
-        } else if (browserType.equalsIgnoreCase("safari")) {
+            caps.setCapability("platformName", "MAC");
+            caps.setCapability("browserName", "firefox");
+            caps.setCapability("version", "latest");
+        } 
+        else if (browserType.equalsIgnoreCase("safari")) 
+        {
             caps = DesiredCapabilities.safari();
-            caps.setCapability("platformName", "ANY");
+            caps.setCapability("platformName", "MAC");
             caps.setCapability("browserName", "safari");
             caps.setCapability("version", "latest");
         }
         driver = new RemoteWebDriver(new URL("http://" + returnProperties("HubName") + ":4444/wd/hub"), caps);
-        driver.get(returnProperties("AppURL"));
+ 
     }
 
 
@@ -63,7 +75,7 @@ public class DriverFactory {
             WebDriverManager.firefoxdriver().setup();
             driver = new FirefoxDriver();
         }
-        driver.get(returnProperties("AppURL"));
+       
     }
 
 }
