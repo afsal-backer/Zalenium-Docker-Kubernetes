@@ -18,13 +18,4 @@
             <class name="com.automationcalling.testsuites.BasicTests1"/>
         </classes>
     </test>
-    
-     <test name="chrome_local2">
-        <parameter name="browsertype" value="chrome"/>
-        <parameter name="executionType" value="remote"/>
-        <parameter name="url" value="https://www.target.com"/>
-        <classes>
-            <class name="com.automationcalling.testsuites.BasicTests2"/>
-        </classes>
-    </test>
 </suite>
