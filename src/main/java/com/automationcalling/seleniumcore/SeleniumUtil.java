@@ -43,7 +43,4 @@ public class SeleniumUtil{
             e.printStackTrace();
         }
     }
-
-
 }
-
