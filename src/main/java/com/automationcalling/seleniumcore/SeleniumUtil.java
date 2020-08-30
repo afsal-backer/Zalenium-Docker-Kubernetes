@@ -8,8 +8,7 @@ public class SeleniumUtil{
 
     public WebDriver returnDriver(String browserType,String executionType) throws IOException 
     {
-    	System.out.println("driver btype is: "+browserType);
-        System.out.println("driver executionType is: "+executionType);
+
     	DriverFactory driverFactory = new DriverFactory();
         driver=driverFactory.getBrowserInit(browserType, executionType);
         return driver;
