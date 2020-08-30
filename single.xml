@@ -2,7 +2,7 @@
 <suite name="ParallelAutomation">
 
     <test name="chrome_local">
-        <parameter name="browsertype" value="chrome"/>
+        <parameter name="browsertype" value="firefox"/>
         <parameter name="executionType" value="remote"/>
         <classes>
             <class name="com.automationcalling.testsuites.BasicTests"/>
