@@ -12,14 +12,15 @@ public class BasicTests
 {
     private Automationcallinghome automationcallinghome;
 
-    @Parameters({"browsertype", "executionType"})
+    @Parameters({"browsertype", "executionType","url"})
    
     @BeforeClass
-    public void init(String browserType, String executionType) throws IOException 
+    public void init(String browserType, String executionType, String url) throws IOException 
     {
        System.out.println("btype is: "+browserType);
        System.out.println("executionType is: "+executionType);
-       automationcallinghome = new Automationcallinghome(browserType, executionType);
+       System.out.println("url is: "+url);
+       automationcallinghome = new Automationcallinghome(browserType, executionType, url);
     }
 
     @Test
