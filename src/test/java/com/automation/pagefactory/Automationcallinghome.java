@@ -45,6 +45,7 @@ public class Automationcallinghome extends SeleniumUtil
         Thread.sleep(2000);
         
         System.out.println("Entered password.");
+          Thread.sleep(8000);
     }
     
     public void amazon() throws InterruptedException 
