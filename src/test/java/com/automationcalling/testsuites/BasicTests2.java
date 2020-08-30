@@ -34,5 +34,4 @@ public class BasicTests2
     {
         automationcallinghome.destroyPage();
     }
-
 }
