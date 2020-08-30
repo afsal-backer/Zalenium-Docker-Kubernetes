@@ -19,9 +19,11 @@ public class Utils
         
         if (keyName.equalsIgnoreCase("HubName"))
         {
-        	hub="localhost";
+        	hub="3.129.9.62";
+		System.out.println("View will be in: "+hub);
         	return (hub);
         }
+	    	System.out.println("Return null");
 		return null;
         
     }
