@@ -8,22 +8,25 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 
-public class BasicTests1 {
-    private Automationcallinghome automationcallinghome;
+public class BasicTests1 
+{
+	private Automationcallinghome automationcallinghome;
 
-    @Parameters({"browsertype", "executionType"})
+    @Parameters({"browsertype", "executionType","url"})
+   
     @BeforeClass
-    public void init(String browserType, String executionType) throws IOException 
+    public void init(String browserType, String executionType, String url) throws IOException 
     {
        System.out.println("btype is: "+browserType);
        System.out.println("executionType is: "+executionType);
-       automationcallinghome = new Automationcallinghome(browserType, executionType);
+       System.out.println("url is: "+url);
+       automationcallinghome = new Automationcallinghome(browserType, executionType, url);
     }
 
     @Test
     public void articleLinkTest() throws InterruptedException 
     {
-        automationcallinghome.clickArticlelink();
+        automationcallinghome.amazon();
     }
 
     @AfterClass
