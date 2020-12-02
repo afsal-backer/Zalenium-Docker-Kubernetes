@@ -4,7 +4,7 @@
     <test name="chrome_local">
         <parameter name="browsertype" value="chrome"/>
         <parameter name="executionType" value="remote"/>
-        <parameter name="envriorment" value="docker"/>
+        <parameter name="environment" value="docker"/>
         <parameter name="url" value="https://login.salesforce.com"/>
         <classes>
             <class name="com.automationcalling.testsuites.BasicTests"/>
@@ -14,7 +14,7 @@
      <test name="chrome_local1">
         <parameter name="browsertype" value="firefox"/>
         <parameter name="executionType" value="remote"/>
-        <parameter name="envriorment" value="docker"/>
+        <parameter name="environment" value="docker"/>
         <parameter name="url" value="https://www.amazon.com"/>
         <classes>
             <class name="com.automationcalling.testsuites.BasicTests1"/>
@@ -24,7 +24,7 @@
      <test name="chrome_local2">
         <parameter name="browsertype" value="chrome"/>
         <parameter name="executionType" value="remote"/>
-        <parameter name="envriorment" value="docker"/>
+        <parameter name="environment" value="docker"/>
         <parameter name="url" value="https://www.target.com"/>
         <classes>
             <class name="com.automationcalling.testsuites.BasicTests2"/>
@@ -34,7 +34,7 @@
     <test name="chrome_local3">
         <parameter name="browsertype" value="firefox"/>
         <parameter name="executionType" value="remote"/>
-        <parameter name="envriorment" value="docker"/>
+        <parameter name="environment" value="docker"/>
         <parameter name="url" value="https://www.facebook.com"/>
         <classes>
             <class name="com.automationcalling.testsuites.BasicTests3"/>
@@ -44,7 +44,7 @@
       <test name="chrome_local4">
         <parameter name="browsertype" value="chrome"/>
         <parameter name="executionType" value="remote"/>
-        <parameter name="envriorment" value="docker"/>
+        <parameter name="environment" value="docker"/>
         <parameter name="url" value="https://www.linkedin.com"/>
         <classes>
             <class name="com.automationcalling.testsuites.BasicTests4"/>
@@ -54,7 +54,7 @@
     <test name="chrome_local5">
         <parameter name="browsertype" value="chrome"/>
         <parameter name="executionType" value="remote"/>
-        <parameter name="envriorment" value="docker"/>
+        <parameter name="environment" value="docker"/>
         <parameter name="url" value="https://www.linkedin.com"/>
         <classes>
             <class name="com.automationcalling.testsuites.BasicTests5"/>
