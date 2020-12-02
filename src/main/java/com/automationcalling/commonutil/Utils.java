@@ -19,7 +19,12 @@ public class Utils
         
         if (keyName.equalsIgnoreCase("HubName"))
         {
-        	hub="localhost";
+        	
+        	
+       // 	hub="192.168.64.2"; // for K8S
+        	
+        	hub="localhost"; // For docker-Zalenium
+        	
         	System.out.println("View will be in: "+hub);
         	return (hub);
         }

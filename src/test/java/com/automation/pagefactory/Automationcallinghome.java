@@ -42,7 +42,7 @@ public class Automationcallinghome extends SeleniumUtil
 
         
         driver.findElement(By.id("password")).sendKeys("test@2020");
-        Thread.sleep(2000);
+        Thread.sleep(10000);
         
         System.out.println("Entered password.");
     }
@@ -62,6 +62,51 @@ public class Automationcallinghome extends SeleniumUtil
     	Thread.sleep(5000);
         
     	System.out.println("Opened Target.");
+        
+    }
+    
+    public void facebook() throws InterruptedException 
+    {
+    	driver.get(urltoopen);
+    	Thread.sleep(5000);
+        
+    	System.out.println("Opened Facebook.");
+        
+    }
+    
+    public void gmail() throws InterruptedException 
+    {
+    	driver.get(urltoopen);
+    	Thread.sleep(5000);
+        
+    	System.out.println("Opened Gmail.");
+        
+    }
+    
+    public void infoblox() throws InterruptedException 
+    {
+    	driver.get(urltoopen);
+    	Thread.sleep(5000);
+        
+    	System.out.println("Opened Infoblox.");
+        
+    }
+    
+    public void linkedin() throws InterruptedException 
+    {
+    	driver.get(urltoopen);
+    	Thread.sleep(5000);
+        
+    	System.out.println("Opened LinkedIn.");
+        
+    }
+    
+    public void google() throws InterruptedException 
+    {
+    	driver.get(urltoopen);
+    	Thread.sleep(5000);
+        
+    	System.out.println("Opened Google.");
         
     }
 

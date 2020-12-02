@@ -3,10 +3,10 @@
 
     <test name="chrome_local">
         <parameter name="browsertype" value="chrome"/>
-        <parameter name="executionType" value="local"/>
-        <parameter name="url" value="https://test.salesforce.com"/>
+        <parameter name="executionType" value="remote"/>
+        <parameter name="url" value="https://www.target.com"/>
         <classes>
-            <class name="com.automationcalling.testsuites.BasicTests"/>
+            <class name="com.automationcalling.testsuites.BasicTests2"/>
         </classes>
     </test>
 </suite>

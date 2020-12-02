@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 
-public class BasicTests2 
+public class BasicTests6 
 {
 	private Automationcallinghome automationcallinghome;
 
@@ -26,7 +26,7 @@ public class BasicTests2
     @Test
     public void articleLinkTest() throws InterruptedException 
     {
-        automationcallinghome.target();
+        automationcallinghome.infoblox();
     }
 
     @AfterClass
