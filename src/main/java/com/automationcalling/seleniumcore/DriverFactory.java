@@ -36,8 +36,8 @@ public class DriverFactory {
         }
          
         
-        //driver = new RemoteWebDriver(new URL("http://" + returnProperties("HubName") + ":31585/wd/hub"), caps);  //This is for K8S
-        driver = new RemoteWebDriver(new URL("http://" + returnProperties("HubName") + ":4444/wd/hub"), caps);   //This is for docker-Zalenium
+        driver = new RemoteWebDriver(new URL("http://" + returnProperties("HubName") + ":31585/wd/hub"), caps);  //This is for K8S
+      //  driver = new RemoteWebDriver(new URL("http://" + returnProperties("HubName") + ":4444/wd/hub"), caps);   //This is for docker-Zalenium
      
      
     }
