@@ -16,33 +16,40 @@ public class DriverFactory {
     WebDriver driver;
     DesiredCapabilities caps;
 
-    public WebDriver getBrowserInit(String browserType, String executionType) throws IOException 
+    public WebDriver getBrowserInit(String browserType, String executionType, String environment) throws IOException 
     {
         if (executionType.equalsIgnoreCase("remote")) {
-            initializeRemoteDriver(browserType);
+            initializeRemoteDriver(browserType,environment);
         } else if (executionType.equalsIgnoreCase("local")) {
-            initializeLocalDriver(browserType);
+            initializeLocalDriver(browserType,environment);
         } else if (executionType.equalsIgnoreCase("cloud")) {
-            initializeCloudDriver(browserType);
+            initializeCloudDriver(browserType,environment);
         }
         return driver;
     }
 
-    public void initializeRemoteDriver(String browserType) throws IOException {
+    public void initializeRemoteDriver(String browserType, String environment) throws IOException {
         if (browserType.equalsIgnoreCase("chrome")) {
             caps = DesiredCapabilities.chrome();
-        } else if (browserType.equalsIgnoreCase("firefox")) {
+        } 
+        else if (browserType.equalsIgnoreCase("firefox")) 
+        {
             caps = DesiredCapabilities.firefox();
         }
          
+        if(environment.equalsIgnoreCase("kubernetes"))
+        {
+        	driver = new RemoteWebDriver(new URL("http://192.168.64.2:31585/wd/hub"), caps);  //This is for K8S
+        }
         
-        driver = new RemoteWebDriver(new URL("http://" + returnProperties("HubName") + ":31585/wd/hub"), caps);  //This is for K8S
-      //  driver = new RemoteWebDriver(new URL("http://" + returnProperties("HubName") + ":4444/wd/hub"), caps);   //This is for docker-Zalenium
-     
+        if(environment.equalsIgnoreCase("docker"))
+        {
+        	driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), caps);   //This is for docker-Zalenium
+        }
      
     }
 
-    public void initializeCloudDriver(String browserType) throws IOException 
+    public void initializeCloudDriver(String browserType, String environment) throws IOException 
     {
         if (browserType.equalsIgnoreCase("chrome")) 
         {
@@ -70,7 +77,7 @@ public class DriverFactory {
     }
 
 
-    public void initializeLocalDriver(String browserType) throws IOException {
+    public void initializeLocalDriver(String browserType, String environment) throws IOException {
         if (browserType.equalsIgnoreCase("chrome")) {
             WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver();

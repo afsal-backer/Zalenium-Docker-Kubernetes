@@ -7,11 +7,11 @@ public class SeleniumUtil
 {
     private WebDriver driver;
 
-    public WebDriver returnDriver(String browserType,String executionType) throws IOException 
+    public WebDriver returnDriver(String browserType,String executionType, String environment) throws IOException 
     {
 
     	DriverFactory driverFactory = new DriverFactory();
-        driver=driverFactory.getBrowserInit(browserType, executionType);
+        driver=driverFactory.getBrowserInit(browserType, executionType, environment);
         return driver;
     }
 
